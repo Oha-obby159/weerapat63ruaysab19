@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>สถานที่วัดแนะนำ • อำเภอวานรนิวาส จังหวัดสกลนคร</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google Fonts (Thai friendly) -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- AOS Animation -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <style>
+        :root {
+            --brand: #0d6efd;
+            --surface: #ffffff;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --card-radius: 1.25rem;
+        }
+
+        html,
+        body {
+            font-family: "Prompt", system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans Thai", sans-serif;
+            color: var(--text);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            letter-spacing: .2px;
+        }
+
+        .navbar .nav-link {
+            position: relative;
+            font-weight: 500;
+        }
+
+        .navbar .nav-link::after {
+            content: "";
+            position: absolute;
+            left: .75rem;
+            right: .75rem;
+            bottom: .25rem;
+            height: 2px;
+            background: transparent;
+            transition: background .2s, transform .2s;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        .navbar .nav-link:hover::after,
+        .navbar .nav-link.active::after {
+            background: var(--brand);
+            transform: scaleX(1);
+        }
+
+        .hero {
+            position: relative;
+            min-height: 46vh;
+            display: grid;
+            place-items: end start;
+            border-radius: 1.25rem;
+            overflow: hidden;
+            background: url('images/วัดในอำเภอวานรนิวาส\ จังหวัดสกลนคร.png') center/cover no-repeat;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, .18);
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0, 0, 0, .05), rgba(0, 0, 0, .55));
+        }
+
+        .hero-caption {
+            position: relative;
+            color: #fff;
+            padding: 2.5rem;
+            width: 100%;
+        }
+
+        .hero .title {
+            font-size: clamp(1.75rem, 3.2vw, 3rem);
+            font-weight: 800;
+        }
+
+        .hero .subtitle {
+            opacity: .95;
+        }
+
+        .side-card {
+            border: 0;
+            border-radius: var(--card-radius);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, .06);
+        }
+
+        .list-group-item {
+            border: 0;
+            padding: .75rem 1rem;
+            border-radius: .75rem;
+            margin: .15rem 0;
+        }
+
+        .list-group-item.active {
+            background: #eff6ff;
+            color: #1e40af;
+            font-weight: 700;
+        }
+
+        .app-card {
+            border: 0;
+            border-radius: var(--card-radius);
+            overflow: hidden;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, .08);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 34px rgba(0, 0, 0, .12);
+        }
+
+        .muted {
+            color: var(--muted);
+        }
+
+        .section-title {
+            font-weight: 800;
+            letter-spacing: .2px;
+        }
+
+        .to-top {
+            position: fixed;
+            right: 1rem;
+            bottom: 1rem;
+            z-index: 1080;
+            display: none;
+        }
+
+        footer {
+            border-radius: 1.25rem;
+        }
+
+        mark.search {
+            padding: 0 .2em;
+            border-radius: .25rem;
+            background: #fef08a;
+        }
+
+        .navbar .navbar-nav {
+            flex-wrap: nowrap;
+        }
+
+        .navbar .nav-link {
+            white-space: nowrap;
+        }
+
+        /* ทำให้ scrollbar อยู่ตรงเมนูจริงๆ */
+        .navbar-scroll {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .navbar-scroll::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .navbar-scroll::-webkit-scrollbar-thumb {
+            background: #ddd;
+            border-radius: 4px;
+        }
+
+        /* กันตัดบรรทัด */
+        .navbar .nav-link {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <!-- tool บน -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top border-bottom">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <i class="bi bi-bank2 text-primary"></i>
+                <span>หน้าแรก</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row flex-nowrap overflow-auto">
+                    <li class="nav-item"><a class="nav-link px-3 text-nowrap active" href="1.html"><i
+                                class="bi bi-stars me-1"></i>สถานที่วัดแนะนำ</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-nowrap " href="2.html"><i
+                                class="bi bi-mortarboard me-1"></i>วัดโพธิ์ชัยวิทยาราม</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-nowrap" href="3.html"><i
+                                class="bi bi-flower1 me-1"></i>วัดไตรภูมิ</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-nowrap" href="4.html"><i
+                                class="bi bi-house-heart me-1"></i>วัดโนนวิเวกศรีเมือง</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-nowrap" href="5.html"><i
+                                class="bi bi-hammer me-1"></i>วัดสระเกษ</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-nowrap" href="6.html"><i
+                                class="bi bi-peace me-1"></i>วัดเสบุญเรือง</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-nowrap" href="7.html"><i
+                                class="bi bi-bookmark-heart me-1"></i>วัดธรรมนิเวศวนาราม</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 text-nowrap" href="aboutme.html"><i
+                                class="bi bi-person-badge me-1"></i>ผู้จัดทำเว็บไซต์</a></li>
+                </ul>
+
+
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- ปกวัดเดอะ -->
+    <div class="container my-4">
+        <section class="hero" data-aos="zoom-in" data-aos-duration="800">
+            <div class="hero-caption">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="link-light text-decoration-none" href="index.html"><i
+                                    class="bi bi-house-door"></i> หน้าแรก</a></li>
+                        <li class="breadcrumb-item text-white-50">วัด</li>
+                        <li class="breadcrumb-item active text-white" aria-current="page"></li>
+                    </ol>
+                </nav>
+                <h1 class="title mb-2">วัดในอำเภอวานรนิวาส</h1>
+                <p class="subtitle mb-0">แหล่งธรรมอันสงบงามใจกลางอำเภอวานรนิวาส จังหวัดสกลนคร</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- MAIN -->
+    <div class="container">
+        <div class="row g-4">
+            <aside class="col-lg-4" data-aos="fade-right" data-aos-duration="700">
+                <div class="card side-card p-3">
+                    <div class="d-flex align-items-center gap-3">
+                        
+                       
+                    </div>
+                    <hr>
+                    <div class="fw-semibold mb-2"><i class="bi bi-list-ul me-1"></i>เมนูเว็บไซต์</div>
+                    <div class="list-group list-group-flush" id="sideList">
+                        <a class="list-group-item list-group-item-action " href="index.html"><i
+                                class="bi bi-house me-2"></i>หน้าแรก</a>
+                        <a class="list-group-item list-group-item-action active" href="1.html"><i
+                                class="bi bi-stars me-2"></i>สถานที่วัดแนะนำ</a>
+                        <a class="list-group-item list-group-item-action " href="2.html"><i
+                                class="bi bi-mortarboard me-2"></i>วัดโพธิ์ชัยวิทยาราม</a>
+                        <a class="list-group-item list-group-item-action" href="3.html"><i
+                                class="bi bi-flower1 me-2"></i>วัดไตรภูมิ</a>
+                        <a class="list-group-item list-group-item-action" href="4.html"><i
+                                class="bi bi-house-heart me-2"></i>วัดโนนวิเวกศรีเมือง</a>
+                        <a class="list-group-item list-group-item-action" href="5.html"><i 
+                            class="bi bi-hammer me-2"></i>วัดสระเกษ</a>
+                        <a class="list-group-item list-group-item-action" href="6.html"><i
+                                class="bi bi-peace me-2"></i>วัดเสบุญเรือง</a>
+                        <a class="list-group-item list-group-item-action" href="7.html"><i
+                                class="bi bi-bookmark-heart me-2"></i>วัดธรรมนิเวศวนาราม</a>
+                        <a class="list-group-item list-group-item-action" href="aboutme.html"><i
+                                class="bi bi-person-badge me-2"></i>ผู้จัดทำเว็บไซต์</a>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="col-lg-8" data-aos="fade-up" data-aos-duration="700">
+                <h2 class="section-title mb-3"><i class="bi bi-info-circle me-2 text-primary"></i>ข้อมูลวัด</h2>
+
+                <!-- Carousel Card -->
+                <article class="card app-card mb-4">
+                    <div id="templeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                        <!-- Indicators: 0..4 -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#templeCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="สไลด์ 1"></button>
+                            <button type="button" data-bs-target="#templeCarousel" data-bs-slide-to="1"
+                                aria-label="สไลด์ 2"></button>
+                            <button type="button" data-bs-target="#templeCarousel" data-bs-slide-to="2"
+                                aria-label="สไลด์ 3"></button>
+                            <button type="button" data-bs-target="#templeCarousel" data-bs-slide-to="3"
+                                aria-label="สไลด์ 4"></button>
+                            <button type="button" data-bs-target="#templeCarousel" data-bs-slide-to="4"
+                                aria-label="สไลด์ 5"></button>
+                            <button type="button" data-bs-target="#templeCarousel" data-bs-slide-to="5"
+                                aria-label="สไลด์ 5"></button>
+
+                        </div>
+
+                        <!-- Slides: ทั้งหมดต้องอยู่ใน .carousel-inner -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/temple/วัดโพธิ์ชัย/LINE_ALBUM_วัดโพธิ์_250918_1.jpg" class="d-block w-100" alt="ภาพวัด 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/temple/วัดสเก/LINE_ALBUM_วัดสะเกด_250923_4.jpg"
+                                    class="d-block w-100" alt="ภาพวัด 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/temple/วัดเส/LINE_ALBUM_วัดเส_250923_12.jpg"
+                                    class="d-block w-100" alt="ภาพวัด 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/temple/วัดโนนวิเวก/LINE_ALBUM_วัดโน_250923_2.jpg"
+                                    class="d-block w-100" alt="ภาพวัด 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/temple/วัดไตรภูมิ/LINE_ALBUM_วัดไตรภูมิ_250918_1.jpg"
+                                    class="d-block w-100" alt="ภาพวัด 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/temple/วัดป่า/Screenshot 2025-09-23 215305.png"
+                                    class="d-block w-100" alt="ภาพวัด 6">
+                            </div>
+                            
+                        </div>
+
+                        <!-- Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#templeCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">ก่อนหน้า</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#templeCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">ถัดไป</span>
+                        </button>
+
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center" id="mainText">ภาพวัดในอำเภอวานรนิวาส จังหวัดสกลนคร</p>
+                    </div>
+                </article>
+
+
+
+
+
+            </main>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <footer class="bg-dark text-white text-center p-4">
+            <p class="mb-1">พัฒนาโดย นายวีรภัทร รวยทรัพย์ โรงเรียนมัธยมวานรนิวาส จังหวัดสกลนคร</p>
+            <div class="small text-white-50">© <span id="year"></span> All rights reserved.</div>
+        </footer>
+    </div>
+
+    <button id="toTop" class="btn btn-primary to-top rounded-circle p-3" aria-label="กลับขึ้นด้านบน"><i
+            class="bi bi-chevron-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({ once: true });
+        const toTop = document.getElementById('toTop');
+        window.addEventListener('scroll', () => { toTop.style.display = window.scrollY > 300 ? 'block' : 'none'; });
+        toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
